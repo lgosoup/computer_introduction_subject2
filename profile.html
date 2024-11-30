@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴퓨터 개론 과제 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="KHfavicon.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" defer src="./js/profile/profile.js"></script>
+    <script defer src="./js/scrpit.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_contents">
+        <div class="left">
+          <div class="icon">
+            <i class='bx bx-coffee'></i>
+          </div>
+          <div class="title">개인소개</div>
+        </div>
+        <div class="right">
+          <a href="./index.html">
+            <div class="icon">
+              <i class="bx bxs-home"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_contents">
+        <div class="profile">
+          <div class="profile_image">
+            <img src="./image/meImage.jpg" alt="img" />
+          </div>
+          <div class="profile_description">
+            <div class="name">강현규</div>
+            <div class="introduce">
+              <p>학과 : 소프트웨어학부</p> <br>
+              <p>전공 : 컴퓨터공학전공</p>
+            </div>
+            <div class="introduce">
+              <p>학번 : 2024108095</p>
+            </div>
+          </div>
+        </div>
+        <ol>
+          <li>
+            <h1>생년월일</h1>
+            <p>2004/09/18</p>
+            <br>
+          </li>
+          <li>
+            <h1>거주지</h1>
+            <p>제주</p>
+            <br>
+          </li>
+          <li>
+            <h1>전화번호</h1>
+            <p>010-7446-5877</p>
+            <br>
+          </li>
+        </ol>
+        <div class="picture_list"></div>
+      </div>
+    </main>
+    <div class="modal hidden">
+      <div class="modal_contents">
+        <div class="modal_picture">
+          <img src="./image/meImage.jpg" alt="modal_img" />
+        </div>
+        <div class="modal_description">
+          <div class="modal_title"></div>
+          <div class="modal_subtitle"></div>
+        </div>
+      </div>
+      <div class="btn"></div>
+    </div>
+  </body>
+</html>

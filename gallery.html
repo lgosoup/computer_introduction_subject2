@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴퓨터 개론 과제 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="KHfavicon.png" />
+    <style>
+      html, body {
+        overflow: hidden;
+        margin: 0;
+        height: 100vh; /* 전체 뷰포인트 높이 */
+        width: 100vw;  /* 전체 뷰포인트 너비 */
+      }
+      
+      /* Swiper Slide and Image Styles */
+      .swiper-container {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+      }
+    
+      .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-timing-function: ease-in-out;
+      }
+    
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 280px;  /* 슬라이드 크기 설정 */
+        height: 280px; /* 슬라이드 크기 설정 */
+        overflow: hidden;
+        transition: transform 0.2s ease;
+        cursor: pointer;
+      }
+    
+      .swiper-slide:hover {
+        transform: scale(1.1);
+      }
+    
+      .picture img {
+        width: 100%;
+        height: auto;  /* 비율 유지 */
+        object-fit: contain;  /* 이미지의 비율을 유지하면서 크기 맞추기 */
+      }
+
+      .swiper-slide {
+        width: auto;
+      }
+
+      .swiper-button-prev {
+        color: #000; /* 버튼 색상 */
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+
+    <!-- SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" defer src="./js/gallery/gallery.js"></script>
+    <script defer src="./js/scrpit.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_contents">
+        <div class="left">
+          <div class="icon">
+            <i class='bx bx-coffee'></i>
+          </div>
+          <div class="title">gallery</div>
+        </div>
+        <div class="right">
+          <a href="./index.html">
+            <div class="icon">
+              <i class="bx bxs-home"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_contents">
+        <div class="profile">
+          <div class="profile_image">
+            <img src="./image/camera.jpg" alt="img" />
+          </div>
+          <div class="profile_description">
+            <div class="name">현규의 사진첩</div>
+          </div>
+        </div>
+        <div class="picture_list">
+          <div class="swiper-container">
+            <div class="swiper-wrapper"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="modal hidden">
+      <div class="modal_contents">
+        <div class="modal_picture">
+          <img src="./image/meImage.jpg" alt="modal_img" />
+        </div>
+        <div class="modal_description">
+          <div class="modal_title"></div>
+          <div class="modal_subtitle"></div>
+        </div>
+      </div>
+      <div class="btn"></div>
+    </div>
+  </body>
+</html>

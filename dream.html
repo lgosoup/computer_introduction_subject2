@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴퓨터 개론 과제 2</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="KHfavicon.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" defer src="./js/dream/dream.js"></script>
+    <script defer src="./js/scrpit.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_contents">
+        <div class="left">
+          <div class="icon">
+            <i class='bx bx-coffee'></i>
+          </div>
+          <div class="title">장래희망</div>
+        </div>
+        <div class="right">
+          <a href="./index.html">
+            <div class="icon">
+              <i class="bx bxs-home"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_contents">
+        <div class="profile">
+          <div class="profile_image">
+            <img src="./image/blackboard.jpg" alt="img" />
+          </div>
+          <div class="profile_description">
+            <div class="name">교수</div>
+            <div class="introduce">
+              <p>인공지능</p>
+            </div>
+            <div class="introduce">
+              <p>양자 컴퓨터</p>
+            </div>
+            <div class="introduce">
+              <p>+창업</p>
+            </div>
+          </div>
+        </div>
+        <div class="picture_list"></div>
+      </div>
+    </main>
+    <div class="modal hidden">
+      <div class="modal_contents">
+        <div class="modal_picture">
+          <img src="./image/meImage.jpg" alt="modal_img" />
+        </div>
+        <div class="modal_description">
+          <div class="modal_title"></div>
+          <div class="modal_subtitle"></div>
+        </div>
+      </div>
+      <div class="btn"></div>
+    </div>
+  </body>
+</html>
